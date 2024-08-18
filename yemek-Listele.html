@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-primary p-4">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Yemek Tarifleri</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="yemek-ekleme.html">Yemek Ekleme</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Malzeme Ekle</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-white" href="#">Yemek Listesi</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<main class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="alert alert-danger" role="alert">
+                <h4 class="mb-0">
+                    Yemek Listesi
+                </h4>
+                <div class="row" id="foodlist">
+                     <div class="col-md-6">
+                         <div class="card">
+                             <h5 class="card-header">
+                                 <strong>Yemek Adi:</strong>
+                                 Domates Çorbası
+                             </h5>
+                             <div class="card-body">
+                                 <div class="content">
+                                     <h5>İçindekiler</h5>
+                                     <ul class="icerik-listesi">
+                                            <li class="d-flex justify-content-between">
+                                                Domates 300gr
+                                            </li>
+                                     </ul>
+                                 </div>
+                                 <div class="recipe">
+                                     <h6>Tarif: </h6>
+                                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, rerum.</p>
+
+                                 </div>
+                             </div>
+                             <div class="card-footer d-flex justify-content-between">
+                                 <button type="submit" class="btn btn-danger col me-5 delete-food">Sil</button>
+                                 <button type="submit"class="btn btn-success col completed-food">Yapıldı</button>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="alert alert-success" role="alert">
+                <h4 class="mb-0">
+                    Tamamlanan Yemek Listesi
+                </h4>
+                <div class="row" id="completedlist">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/yemekListesi.js"></script>
+<script src="assets/sweetalert2/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>

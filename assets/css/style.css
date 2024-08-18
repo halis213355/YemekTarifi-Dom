@@ -1,0 +1,15 @@
+.content input{
+    width: 30%;
+    font-size: 12px;
+}
+.content label{
+    cursor: pointer;
+    font-size: 12px;
+}
+.content input:focus-visible{
+    outline: none;
+}
+
+.content ul{
+    padding-left: 0;
+}

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/sweetalert2/dist/sweetalert2.min.css">
+    <title>Document</title>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-primary p-4">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">Yemek Tarifleri</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active text-white" aria-current="page" href="urun-ekleme.html">Malzeme Listesi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="#">Malzeme Ekle</a>
+        </li>
+          <li class="nav-item">
+          <a class="nav-link text-white" href="yemek-Listele.html">Yemek Listesi</a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<main class="container">
+    <div class="row">
+        <div class="col-md-12 mt-3">
+            <div class="card">
+              <div class="card-header">
+                Yemek Ekleme
+              </div>
+              <div class="card-body">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <input type="text" class="form-control" placeholder="Yemek Adı" id="yemek_adi">
+                          <textarea class="form-control mt-3" id="yemekTarifi" cols="30" placeholder="Yemek Tarifi" rows="10"></textarea>
+                      </div>
+                      <div class="col-md-4">
+                          <input type="text" class="form-control" placeholder="Ürün Ara" id="search_yemek">
+                          <ul class="list-group mt-3" id="urunListesi">
+                              <li class="list-group-item">An item <i class="bi bi-plus-lg  float-end"></i></li>
+                              <li class="list-group-item">A second item</li>
+                              <li class="list-group-item">A third item</li>
+                              <li class="list-group-item">A fourth item</li>
+                              <li class="list-group-item">And a fifth one</li>
+                          </ul>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card">
+                              <h5 class="card-header">
+                                  <strong>Yemek Adı :</strong><span id="yemekBaslik">Domates Çorbası</span>
+                              </h5>
+                              <div class="card-body">
+                                <div class="content">
+                                    <h5>İçindekiler</h5>
+                                    <ul class="içerik-listesi" id="icerik_listesi">
+                                         <li class="d-flex justify-content-between">
+                                             <span>
+                                                 <i class="bi bi-trash delete-product-content"></i>
+                                                <label for="miktar-1">Domates</label>
+                                             </span>
+
+                                             <input type="text" class="float-end border-0 border-bottom border-black" placeholder="miktar" id="miktar-1">
+                                         </li>
+                                    </ul>
+                                </div>
+                                <div class="recipe">
+                                    <h6>Tarif:</h6>
+                                    <p id="tarifDetay">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Amet aut, blanditiis cum deleniti error exercitationem iure minus nobis
+                                        officiis omnis quia soluta, tenetur ut? Sequi?
+                                    </p>
+                                </div>
+                              </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 offset-8 mt-3">
+                          <button class="btn btn-outline-success w-100" id="btnKaydet">
+                              Kaydet
+                          </button>
+                      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+<script src="assets/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/yemekEkleme.js"></script>
+<script src="assets/sweetalert2/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
